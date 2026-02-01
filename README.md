@@ -12,7 +12,7 @@ Product site for BibleMarker: privacy policy, support, and desktop download link
 ## Before Deploying
 
 1. **GitHub download links:** Replace `OWNER` in the desktop download URLs in `index.html` with your GitHub username or org (e.g. `https://github.com/yourusername/biblemarker/releases`).
-2. **Support email:** Update the contact email in `support.html` if you prefer a different address (e.g. support@biblemaker.com).
+2. **Support email:** Update the contact email in `support.html` if you prefer a different address (e.g. support@biblemarker.app).
 
 ## Deployment
 
@@ -24,26 +24,26 @@ Same approach as spearssoftware.com. From the project root:
 npx wrangler deploy
 ```
 
-Then add custom domain `biblemaker.com` in the Cloudflare dashboard (Workers & Pages → your worker → Custom domains).
+Then add custom domain `biblemarker.app` as primary in the Cloudflare dashboard (Workers & Pages → your worker → Custom domains). Add `biblemarker.org` and set it to redirect to `biblemarker.app`.
 
 ### Cloudflare Pages
 
 1. Push this repo to GitHub.
 2. In [Cloudflare Dashboard](https://dash.cloudflare.com/) → Pages → Create project → Connect to Git.
 3. Select the repo. Build settings: **Build command** (leave empty), **Build output directory** (leave empty or `/`).
-4. Add custom domain `biblemaker.com` in the project’s Custom domains.
+4. Add custom domain `biblemarker.app` as primary. Add `biblemarker.org` and configure it to redirect to `biblemarker.app` in the project’s Custom domains.
 
 ### Other hosts
 
-The site is static HTML/CSS. Upload the files to any host (GitHub Pages, Netlify, Vercel, or your own server) and point `biblemaker.com` to it.
+The site is static HTML/CSS. Upload the files to any host (GitHub Pages, Netlify, Vercel, or your own server) and point `biblemarker.app` to it. Configure `biblemarker.org` to redirect to `biblemarker.app`.
 
 ## App Store / Play Store URLs
 
-Once live at https://biblemaker.com:
+Once live at https://biblemarker.app (biblemarker.org redirects here):
 
-- **Privacy policy URL:** https://biblemaker.com/privacy
-- **Support URL:** https://biblemaker.com/support
-- **Marketing URL:** https://biblemaker.com
+- **Privacy policy URL:** https://biblemarker.app/privacy.html
+- **Support URL:** https://biblemarker.app/support.html
+- **Marketing URL:** https://biblemarker.app
 
 ## Local Preview
 
