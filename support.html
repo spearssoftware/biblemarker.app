@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support, documentation, and contact for BibleMarker. Getting started guide, how-tos, keyboard shortcuts, and help.">
+    <title>Support - BibleMarker</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html">BibleMarker</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-page">
+                <h1>Support</h1>
+                <p>Need help with BibleMarker? Browse our documentation below or <a href="#contact">contact us</a> for support, bug reports, and feature requests.</p>
+
+                <nav class="support-toc">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#how-to-read">How to Read and Navigate</a></li>
+                        <li><a href="#how-to-mark">How to Mark Text</a></li>
+                        <li><a href="#how-to-keywords">How to Use Key Words</a></li>
+                        <li><a href="#how-to-notes">How to Add Notes and Observations</a></li>
+                        <li><a href="#how-to-search">How to Search</a></li>
+                        <li><a href="#how-to-backup">How to Backup and Export</a></li>
+                        <li><a href="#how-to-api-keys">How to Configure API Keys</a></li>
+                        <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <section id="getting-started">
+                    <h2>Getting Started</h2>
+                    <p>BibleMarker follows the inductive Bible study method, emphasizing <strong>observation</strong> (what does the text say?), <strong>interpretation</strong> (what does it mean?), and <strong>application</strong> (how do I live it?). Mark key words, make lists, note contrasts and time expressions, and identify themes—all in one place.</p>
+                    <h3>First Steps</h3>
+                    <ol>
+                        <li>Choose a translation from the navigation bar (see <a href="#how-to-api-keys">API Keys</a> for premium translations)</li>
+                        <li>Select a book and chapter to read</li>
+                        <li>Optionally add up to 3 translations side-by-side for comparison</li>
+                        <li>Select text to mark, or open the toolbar to define key words</li>
+                    </ol>
+                    <h3>Available Translations</h3>
+                    <p>Over 100 translations are available. <strong>Free translations</strong> (KJV, ASV, WEB, and many more via getBible) work out of the box with no API key. <strong>Premium translations</strong> (ESV, LEB, Darby, YLT, The Emphasized Bible) require your own API key—see <a href="#how-to-api-keys">How to Configure API Keys</a>.</p>
+                    <h3>Toolbar Overview</h3>
+                    <p>The bottom toolbar gives you quick access to core features. Press number keys 1–4:</p>
+                    <ul>
+                        <li><strong>1</strong> — Key Words (define and manage keywords)</li>
+                        <li><strong>2</strong> — Observe (lists, time, places, contrasts, conclusions)</li>
+                        <li><strong>3</strong> — Study Tools (summaries, overviews, themes)</li>
+                        <li><strong>4</strong> — Settings</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-read">
+                    <h2>How to Read and Navigate</h2>
+                    <h3>Selecting a Translation</h3>
+                    <p>Use the translation picker in the navigation bar to choose your primary Bible translation. You can add up to 2 more for side-by-side comparison.</p>
+                    <h3>Choosing Book and Chapter</h3>
+                    <p>Use the book and chapter dropdowns in the navigation bar to jump to any passage. Chapters you've visited are cached for offline reading.</p>
+                    <h3>Multi-Translation View</h3>
+                    <p>View up to 3 translations side-by-side with synchronized scrolling. This helps you observe how different translations render the same passage.</p>
+                    <h3>Navigating Between Chapters</h3>
+                    <ul>
+                        <li>Use <strong>arrow keys</strong>: Left for previous chapter, Right for next</li>
+                        <li>Use <strong>J</strong> and <strong>K</strong> for vim-style navigation (J = next, K = previous)</li>
+                        <li>Use the chapter picker in the navigation bar</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-mark">
+                    <h2>How to Mark Text</h2>
+                    <p>Select any text in the Bible to open the <strong>selection menu</strong>. From there you can:</p>
+                    <ul>
+                        <li><strong>Apply a key word</strong> — Mark the selection with an existing keyword (color and symbol)</li>
+                        <li><strong>Add as variant</strong> — Create a variant of an existing keyword for slight differences (e.g., "God" vs "god")</li>
+                        <li><strong>Create new key word</strong> — Define a new keyword and apply it in one step</li>
+                        <li><strong>Add to observation list</strong> — Capture the text in a list (e.g., contrasts, time expressions)</li>
+                    </ul>
+                    <p>All markings use keywords for consistency. Once you define a keyword, BibleMarker automatically highlights every matching occurrence across all visible translations.</p>
+                </section>
+
+                <section id="how-to-keywords">
+                    <h2>How to Use Key Words</h2>
+                    <p>Key words are central to inductive study—authors repeat them to convey their point. Define keywords once and BibleMarker tracks every occurrence.</p>
+                    <h3>Creating Key Words</h3>
+                    <ul>
+                        <li>Open the <strong>Key Words</strong> panel from the toolbar (key icon or press <strong>3</strong>)</li>
+                        <li>Click "Add Key Word" and enter the word or phrase (e.g., "God", "Jesus", "love")</li>
+                        <li>Choose a color and symbol for consistent marking</li>
+                        <li>Or: select text first, then choose "Create Key Word" from the selection menu</li>
+                    </ul>
+                    <h3>Scoping with Studies</h3>
+                    <p>Create <strong>studies</strong> to limit keywords to specific books. For example, a study on Romans can have its own keyword set. Global keywords (no study) apply everywhere.</p>
+                </section>
+
+                <section id="how-to-notes">
+                    <h2>How to Add Notes and Observations</h2>
+                    <h3>Verse Notes</h3>
+                    <p>Click any <strong>verse number</strong> to add a note. Notes support <strong>Markdown</strong> for formatting (headers, bold, italic, lists, links). Use notes to capture interpretation and application.</p>
+                    <h3>Add to List</h3>
+                    <p>Select text and choose <strong>"Add to List"</strong> from the selection menu to capture observations. You can add to existing lists or create new ones.</p>
+                    <h3>Observe Panel</h3>
+                    <p>Open <strong>Observe</strong> from the toolbar (press <strong>2</strong>) to manage:</p>
+                    <ul>
+                        <li>Lists (e.g., "What I learn about God", "Contrasts")</li>
+                        <li>Time expressions</li>
+                        <li>Places and geography</li>
+                        <li>Contrasts and comparisons</li>
+                        <li>Conclusions</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-search">
+                    <h2>How to Search</h2>
+                    <ul>
+                        <li>Press <strong>Cmd+F</strong> (Mac) or <strong>Ctrl+F</strong> (Windows), or click the search icon in the navigation bar</li>
+                        <li>Search across Bible text, notes, and annotations</li>
+                        <li>Search by verse reference (e.g., "John 3:16") to jump directly to a passage</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-backup">
+                    <h2>How to Backup and Export</h2>
+                    <p>Your study data stays on your device. To protect it:</p>
+                    <ul>
+                        <li><strong>Export backup (JSON):</strong> Go to Settings → Data. Export a full backup for recovery. Store it in a cloud folder (iCloud Drive, Google Drive) for automatic syncing across devices.</li>
+                        <li><strong>Export study notes (Markdown):</strong> Export your notes as a readable, formatted document</li>
+                        <li><strong>Auto-backup:</strong> Enable auto-backup in Settings to save periodic backups to a folder of your choice</li>
+                        <li><strong>Restore:</strong> Import a backup from Settings → Data to recover your study work</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-api-keys">
+                    <h2>How to Configure API Keys (Premium Translations)</h2>
+                    <p>Some translations require your own API key. Go to <strong>Settings → Bible</strong> (or API section) to configure.</p>
+                    <h3>ESV (English Standard Version)</h3>
+                    <p>Get a free API key from <a href="https://api.esv.org">Crossway's ESV API</a>. Subject to noncommercial use terms.</p>
+                    <h3>LEB, Darby, YLT, The Emphasized Bible</h3>
+                    <p>Get an API key from <a href="https://api.scripture.api.bible">Biblia API</a> (Faithlife/Logos). One key unlocks these translations.</p>
+                    <p>API keys are stored locally on your device only and are never transmitted to Spears Software servers.</p>
+                </section>
+
+                <section id="keyboard-shortcuts">
+                    <h2>Keyboard Shortcuts</h2>
+                    <table class="shortcuts-table">
+                        <thead>
+                            <tr>
+                                <th>Shortcut</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>← / →</td><td>Previous / Next chapter</td></tr>
+                            <tr><td>J / K</td><td>Next / Previous chapter (vim-style)</td></tr>
+                            <tr><td>Cmd/Ctrl + F</td><td>Search</td></tr>
+                            <tr><td>1</td><td>Key Words</td></tr>
+                            <tr><td>2</td><td>Observe</td></tr>
+                            <tr><td>3</td><td>Study Tools</td></tr>
+                            <tr><td>4</td><td>Settings</td></tr>
+                            <tr><td>Esc</td><td>Close modals</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Need help? Have a question, bug report, or feature request?</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:biblemarker@spearssoftware.com">biblemarker@spearssoftware.com</a></li>
+                    </ul>
+                    <p>For bug reports, please include as much detail as you can: device, OS version, and steps to reproduce. We'll do our best to respond promptly.</p>
+                    <p>You can also visit <a href="https://spearssoftware.com">Spears Software</a> for more information about our company and other applications.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spears Software. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <p class="footer-spears">BibleMarker is a product of <a href="https://spearssoftware.com">Spears Software</a></p>
+        </div>
+    </footer>
+</body>
+</html>
