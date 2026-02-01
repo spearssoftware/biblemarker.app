@@ -11,7 +11,7 @@ Product site for BibleMarker: privacy policy, support, and desktop download link
 
 ## Before Deploying
 
-1. **GitHub download links:** Replace `OWNER` in the desktop download URLs in `index.html` with your GitHub username or org (e.g. `https://github.com/yourusername/biblemarker/releases`).
+1. **GitHub download links:** Desktop download URLs in `index.html` point to https://github.com/spearssoftware/biblemarker/releases. Update if your repo is elsewhere.
 2. **Support email:** Update the contact email in `support.html` if you prefer a different address (e.g. support@biblemarker.app).
 
 ## Deployment
