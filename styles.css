@@ -269,6 +269,12 @@ nav .container {
     background-color: var(--primary-dark);
 }
 
+.download-hint {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
 .mobile-stores {
     margin-top: 2rem;
     font-size: 0.95rem;
