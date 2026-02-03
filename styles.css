@@ -75,6 +75,18 @@ nav .container {
     color: var(--primary-color);
 }
 
+.nav-download {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 6px;
+}
+
+.nav-download:hover {
+    background-color: var(--primary-dark);
+    color: white !important;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
