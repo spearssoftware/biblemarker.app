@@ -333,54 +333,62 @@ nav .container {
     background-color: var(--primary-dark);
 }
 
-.download-platforms {
+.dl-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
     text-align: left;
 }
 
-.download-platform {
+.dl-col {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.download-platform-title {
+.dl-os {
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-light);
-    margin-bottom: 0.25rem;
+    margin: 0 0 0.25rem 0;
 }
 
-.btn-platform {
+a.dl-btn {
     display: block;
     padding: 0.65rem 1rem;
-    background-color: var(--primary-color);
-    color: white !important;
-    text-decoration: none !important;
+    background-color: #007aff;
+    color: #ffffff;
+    text-decoration: none;
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: background-color 0.2s;
     text-align: center;
+    transition: background-color 0.2s;
 }
 
-.btn-platform:hover {
-    background-color: var(--primary-dark);
+a.dl-btn:hover {
+    background-color: #0051d5;
+    color: #ffffff;
 }
 
-.btn-platform.btn-platform-secondary {
-    background-color: var(--bg-light);
-    color: var(--text-color) !important;
-    border: 1px solid var(--border-color);
+a.dl-btn.dl-btn-alt {
+    background-color: #f2f2f7;
+    color: #000000;
+    border: 1px solid #c6c6c8;
 }
 
-.btn-platform.btn-platform-secondary:hover {
-    background-color: var(--border-color);
+a.dl-btn.dl-btn-alt:hover {
+    background-color: #c6c6c8;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    .dl-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .download-github {
