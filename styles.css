@@ -189,7 +189,7 @@ nav .container {
 /* Features Section */
 .features {
     padding: 4rem 0;
-    background-color: var(--bg-light);
+    background-color: var(--bg-color);
 }
 
 .features h2 {
@@ -262,6 +262,7 @@ nav .container {
 /* Translations Section */
 .translations {
     padding: 4rem 0;
+    background-color: var(--bg-light);
 }
 
 .translations h2 {
