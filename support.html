@@ -39,10 +39,11 @@
                         <li><a href="#how-to-read">How to Read and Navigate</a></li>
                         <li><a href="#how-to-mark">How to Mark Text</a></li>
                         <li><a href="#how-to-keywords">How to Use Key Words</a></li>
+                        <li><a href="#how-to-strongs">Strong's Numbers Lookup</a></li>
                         <li><a href="#how-to-notes">How to Add Notes and Observations</a></li>
                         <li><a href="#how-to-search">How to Search</a></li>
                         <li><a href="#how-to-backup">How to Backup and Export</a></li>
-                        <li><a href="#how-to-api-keys">How to Configure API Keys</a></li>
+                        <li><a href="#how-to-translations">Translations and Modules</a></li>
                         <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -53,20 +54,20 @@
                     <p>BibleMarker follows the inductive Bible study method, emphasizing <strong>observation</strong> (what does the text say?), <strong>interpretation</strong> (what does it mean?), and <strong>application</strong> (how do I live it?). Mark key words, make lists, note contrasts and time expressions, and identify themes—all in one place.</p>
                     <h3>First Steps</h3>
                     <ol>
-                        <li>Choose a translation from the navigation bar (see <a href="#how-to-api-keys">API Keys</a> for premium translations)</li>
-                        <li>Select a book and chapter to read</li>
+                        <li>Open the app — NASB 2020 is bundled and ready to use with no setup required</li>
+                        <li>Choose a book and chapter to read</li>
                         <li>Optionally add up to 3 translations side-by-side for comparison</li>
                         <li>Select text to mark, or open the toolbar to define key words</li>
                     </ol>
                     <h3>Available Translations</h3>
-                    <p>Over 100 translations are available. <strong>Free translations</strong> (KJV, ASV, WEB, and many more via getBible) work out of the box with no API key. <strong>Premium translations</strong> (ESV, LEB, Darby, YLT, The Emphasized Bible) require your own API key—see <a href="#how-to-api-keys">How to Configure API Keys</a>.</p>
+                    <p><strong>NASB 2020</strong> is bundled with the app and works fully offline. Additional translations are available as downloadable SWORD modules (see <a href="#how-to-translations">Translations and Modules</a>). The <strong>ESV</strong> is available with a free API key from Crossway.</p>
                     <h3>Toolbar Overview</h3>
-                    <p>The bottom toolbar gives you quick access to core features. Press number keys 1–4:</p>
+                    <p>The bottom toolbar gives you quick access to core features. Press number keys 1–3, or tap the gear icon:</p>
                     <ul>
-                        <li><strong>1</strong> — Key Words (define and manage keywords)</li>
-                        <li><strong>2</strong> — Observe (lists, time, places, contrasts, conclusions)</li>
-                        <li><strong>3</strong> — Study Tools (summaries, overviews, themes)</li>
-                        <li><strong>4</strong> — Settings</li>
+                        <li><strong>1 — Mark</strong>: Define and manage keywords; apply colors and symbols to selected text</li>
+                        <li><strong>2 — Observe</strong>: Record observations — lists, 5 W's &amp; H, contrasts, time expressions, places, people</li>
+                        <li><strong>3 — Analyze</strong>: Summaries and worksheets — chapter at a glance, book overview, timeline, places map, themes, interpretation, application, conclusions</li>
+                        <li><strong>⚙️ Settings</strong>: Appearance, Bible modules, backup/restore, studies, and help</li>
                     </ul>
                 </section>
 
@@ -94,6 +95,7 @@
                         <li><strong>Add as variant</strong> — Create a variant of an existing keyword for slight differences (e.g., "God" vs "god")</li>
                         <li><strong>Create new key word</strong> — Define a new keyword and apply it in one step</li>
                         <li><strong>Add to observation list</strong> — Capture the text in a list (e.g., contrasts, time expressions)</li>
+                        <li><strong>Strong's Lookup</strong> — View the original Hebrew or Greek word (available for SWORD modules with Strong's tagging)</li>
                     </ul>
                     <p>All markings use keywords for consistency. Once you define a keyword, BibleMarker automatically highlights every matching occurrence across all visible translations.</p>
                 </section>
@@ -103,13 +105,24 @@
                     <p>Key words are central to inductive study—authors repeat them to convey their point. Define keywords once and BibleMarker tracks every occurrence.</p>
                     <h3>Creating Key Words</h3>
                     <ul>
-                        <li>Open the <strong>Key Words</strong> panel from the toolbar (key icon or press <strong>3</strong>)</li>
+                        <li>Open the <strong>Mark</strong> panel from the toolbar (press <strong>1</strong>)</li>
                         <li>Click "Add Key Word" and enter the word or phrase (e.g., "God", "Jesus", "love")</li>
                         <li>Choose a color and symbol for consistent marking</li>
                         <li>Or: select text first, then choose "Create Key Word" from the selection menu</li>
                     </ul>
                     <h3>Scoping with Studies</h3>
-                    <p>Create <strong>studies</strong> to limit keywords to specific books. For example, a study on Romans can have its own keyword set. Global keywords (no study) apply everywhere.</p>
+                    <p>Create <strong>studies</strong> to limit keywords to specific books. Manage studies in <strong>Settings → Studies</strong>. Global keywords (no study) apply everywhere.</p>
+                </section>
+
+                <section id="how-to-strongs">
+                    <h2>Strong's Numbers Lookup</h2>
+                    <p>When reading a SWORD module that includes Strong's data (such as NASB 2020), you can look up the original Hebrew or Greek word for any term in the text.</p>
+                    <ol>
+                        <li>Select a word in the Bible text</li>
+                        <li>If Strong's data is available for that word, a <strong>Strong's Lookup</strong> button appears in the selection menu</li>
+                        <li>Tap it to see the original word, transliteration, pronunciation, and definition</li>
+                    </ol>
+                    <p>Strong's lookup works fully offline — the Hebrew and Greek dictionaries are bundled with the app. Not all translations include Strong's tagging; it depends on the SWORD module.</p>
                 </section>
 
                 <section id="how-to-notes">
@@ -121,10 +134,21 @@
                     <h3>Observe Panel</h3>
                     <p>Open <strong>Observe</strong> from the toolbar (press <strong>2</strong>) to manage:</p>
                     <ul>
-                        <li>Lists (e.g., "What I learn about God", "Contrasts")</li>
+                        <li>Lists (e.g., "What I learn about God", "Commands to obey")</li>
+                        <li>5 W's &amp; H (Who, What, When, Where, Why, How)</li>
+                        <li>Contrasts and comparisons</li>
                         <li>Time expressions</li>
                         <li>Places and geography</li>
-                        <li>Contrasts and comparisons</li>
+                        <li>People and groups</li>
+                    </ul>
+                    <h3>Analyze Panel</h3>
+                    <p>Open <strong>Analyze</strong> from the toolbar (press <strong>3</strong>) for summaries and worksheets:</p>
+                    <ul>
+                        <li>Chapter at a glance and book overview</li>
+                        <li>Timeline of time expressions</li>
+                        <li>Interactive places map</li>
+                        <li>Theme tracker</li>
+                        <li>Interpretation and Application worksheets</li>
                         <li>Conclusions</li>
                     </ul>
                 </section>
@@ -149,13 +173,15 @@
                     </ul>
                 </section>
 
-                <section id="how-to-api-keys">
-                    <h2>How to Configure API Keys (Premium Translations)</h2>
-                    <p>Some translations require your own API key. Go to <strong>Settings → Bible</strong> (or API section) to configure.</p>
+                <section id="how-to-translations">
+                    <h2>Translations and Modules</h2>
+                    <p>BibleMarker uses local SWORD modules for offline Bible text. No account is required to get started.</p>
+                    <h3>Bundled</h3>
+                    <p><strong>NASB 2020</strong> is included with the app and works fully offline with no setup.</p>
+                    <h3>Downloadable SWORD Modules</h3>
+                    <p>Additional translations are available as downloadable SWORD modules. Go to <strong>Settings → Bible → Manage Modules</strong> to browse and download them. Modules are stored locally and work offline once downloaded.</p>
                     <h3>ESV (English Standard Version)</h3>
-                    <p>Get a free API key from <a href="https://api.esv.org">Crossway's ESV API</a>. Subject to noncommercial use terms.</p>
-                    <h3>LEB, Darby, YLT, The Emphasized Bible</h3>
-                    <p>Get an API key from <a href="https://api.scripture.api.bible">Biblia API</a> (Faithlife/Logos). One key unlocks these translations.</p>
+                    <p>Get a free API key from <a href="https://api.esv.org">Crossway's ESV API</a> and enter it in <strong>Settings → Bible</strong>. Subject to noncommercial use terms. Requires an internet connection per fetch.</p>
                     <p>API keys are stored locally on your device only and are never transmitted to Spears Software servers.</p>
                 </section>
 
@@ -172,10 +198,9 @@
                             <tr><td>← / →</td><td>Previous / Next chapter</td></tr>
                             <tr><td>J / K</td><td>Next / Previous chapter (vim-style)</td></tr>
                             <tr><td>Cmd/Ctrl + F</td><td>Search</td></tr>
-                            <tr><td>1</td><td>Key Words</td></tr>
-                            <tr><td>2</td><td>Observe</td></tr>
-                            <tr><td>3</td><td>Study Tools</td></tr>
-                            <tr><td>4</td><td>Settings</td></tr>
+                            <tr><td>1</td><td>Mark (keywords and marking tools)</td></tr>
+                            <tr><td>2</td><td>Observe (lists, contrasts, time, places, people)</td></tr>
+                            <tr><td>3</td><td>Analyze (chapter, overview, timeline, themes, worksheets)</td></tr>
                             <tr><td>Esc</td><td>Close modals</td></tr>
                         </tbody>
                     </table>
