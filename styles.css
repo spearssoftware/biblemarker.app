@@ -360,8 +360,8 @@ nav .container {
     display: block;
     padding: 0.65rem 1rem;
     background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -371,18 +371,16 @@ nav .container {
 
 .btn-platform:hover {
     background-color: var(--primary-dark);
-    color: white;
 }
 
-.btn-platform.btn-secondary {
+.btn-platform.btn-platform-secondary {
     background-color: var(--bg-light);
-    color: var(--text-color);
+    color: var(--text-color) !important;
     border: 1px solid var(--border-color);
 }
 
-.btn-platform.btn-secondary:hover {
+.btn-platform.btn-platform-secondary:hover {
     background-color: var(--border-color);
-    color: var(--text-color);
 }
 
 .download-github {
@@ -619,6 +617,10 @@ footer p {
 
     .download-buttons {
         flex-direction: column;
+    }
+
+    .download-platforms {
+        grid-template-columns: 1fr;
     }
 
     footer .container {
