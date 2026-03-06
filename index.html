@@ -41,9 +41,49 @@
 
         <section class="screenshot">
             <div class="container">
-                <img src="images/biblemaker-screenshot-202601.png" alt="BibleMarker app screenshot" class="screenshot-img">
+                <div class="carousel">
+                    <div class="carousel-slides">
+                        <img src="images/screenshot-reading.png" alt="BibleMarker — reading with keyword markings" class="carousel-slide active">
+                        <img src="images/screenshot-multi-translation.png" alt="BibleMarker — 3 translations side by side" class="carousel-slide">
+                        <img src="images/screenshot-observe.png" alt="BibleMarker — Observe panel with 5 W's &amp; H" class="carousel-slide">
+                        <img src="images/screenshot-places-map.png" alt="BibleMarker — Analyze panel with places map" class="carousel-slide">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" aria-label="Screenshot 1"></button>
+                        <button class="carousel-dot" aria-label="Screenshot 2"></button>
+                        <button class="carousel-dot" aria-label="Screenshot 3"></button>
+                        <button class="carousel-dot" aria-label="Screenshot 4"></button>
+                    </div>
+                </div>
             </div>
         </section>
+        <script>
+            (function () {
+                const slides = document.querySelectorAll('.carousel-slide');
+                const dots = document.querySelectorAll('.carousel-dot');
+                let current = 0;
+                let timer;
+
+                function goTo(n) {
+                    slides[current].classList.remove('active');
+                    dots[current].classList.remove('active');
+                    current = (n + slides.length) % slides.length;
+                    slides[current].classList.add('active');
+                    dots[current].classList.add('active');
+                }
+
+                function next() { goTo(current + 1); }
+
+                function startTimer() { timer = setInterval(next, 4000); }
+                function resetTimer() { clearInterval(timer); startTimer(); }
+
+                dots.forEach(function (dot, i) {
+                    dot.addEventListener('click', function () { goTo(i); resetTimer(); });
+                });
+
+                startTimer();
+            })();
+        </script>
 
         <section class="features">
             <div class="container">
