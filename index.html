@@ -39,106 +39,46 @@
             </div>
         </section>
 
-        <section class="screenshot">
+        <section class="feature-section bg-light">
             <div class="container">
-                <div class="carousel">
-                    <div class="carousel-slides">
-                        <img src="images/screenshot-reading.png" alt="BibleMarker — reading with keyword markings" class="carousel-slide active">
-                        <img src="images/screenshot-multi-translation.png" alt="BibleMarker — 3 translations side by side" class="carousel-slide">
-                        <img src="images/screenshot-observe.png" alt="BibleMarker — Observe panel with 5 W's &amp; H" class="carousel-slide">
-                        <img src="images/screenshot-places-map.png" alt="BibleMarker — Analyze panel with places map" class="carousel-slide">
-                    </div>
-                    <div class="carousel-dots">
-                        <button class="carousel-dot active" aria-label="Screenshot 1"></button>
-                        <button class="carousel-dot" aria-label="Screenshot 2"></button>
-                        <button class="carousel-dot" aria-label="Screenshot 3"></button>
-                        <button class="carousel-dot" aria-label="Screenshot 4"></button>
-                    </div>
+                <div class="feature-text">
+                    <h2>Mark What Matters</h2>
+                    <p>Key words are the foundation of inductive study — authors repeat them to drive their point home. Define a keyword once with a color and symbol, and BibleMarker tracks every occurrence across the text automatically. Select any word to apply an existing keyword, create a new one, or look up the original Hebrew or Greek via Strong’s Numbers.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="images/screenshot-reading.png" alt="BibleMarker — reading with keyword markings">
                 </div>
             </div>
         </section>
-        <script>
-            (function () {
-                const slides = document.querySelectorAll('.carousel-slide');
-                const dots = document.querySelectorAll('.carousel-dot');
-                let current = 0;
-                let timer;
 
-                function goTo(n) {
-                    slides[current].classList.remove('active');
-                    dots[current].classList.remove('active');
-                    current = (n + slides.length) % slides.length;
-                    slides[current].classList.add('active');
-                    dots[current].classList.add('active');
-                }
-
-                function next() { goTo(current + 1); }
-
-                function startTimer() { timer = setInterval(next, 4000); }
-                function resetTimer() { clearInterval(timer); startTimer(); }
-
-                dots.forEach(function (dot, i) {
-                    dot.addEventListener('click', function () { goTo(i); resetTimer(); });
-                });
-
-                startTimer();
-            })();
-        </script>
-
-        <section class="features">
+        <section class="feature-section">
             <div class="container">
-                <h2>Built for Inductive Bible Study</h2>
-                <p class="features-intro">BibleMarker follows the same precepts as classic inductive study: <strong>observation</strong> (what does the text say?), <strong>interpretation</strong> (what does it mean?), and <strong>application</strong> (how do I live it?). Mark key words, make lists, note contrasts and time expressions, and identify themes—all in one place.</p>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Mark Key Words &amp; Phrases</h3>
-                        <p>Key words are essential to the text; authors repeat them to convey their point. Define keywords once and BibleMarker tracks every occurrence across your study so you can observe patterns and structure.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Lists &amp; Structure</h3>
-                        <p>Making lists reveals truths and highlights important concepts. Number items in the text, list what you learn about each key word or person, and add your own chapter titles and section headings.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Contrasts, Time &amp; Geography</h3>
-                        <p>Note contrasts and comparisons, expressions of time, and geographic locations. The text’s own structure—who, what, when, where, why, how—guides accurate interpretation.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Multi-Translation View</h3>
-                        <p>Compare up to 3 Bible translations side-by-side with synchronized scrolling. Use multiple versions to observe the text more precisely and interpret with care.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Annotations &amp; Notes</h3>
-                        <p>Highlight, underline, and mark verses with custom colors and symbols. Add notes with Markdown support to capture interpretation and application as you study.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Offline &amp; Private</h3>
-                        <p>Chapters cache locally for offline reading. All your markings and notes stay on your device—no account required, no data sent to our servers.</p>
-                    </div>
+                <div class="feature-image">
+                    <img src="images/screenshot-observe.png" alt="BibleMarker — Observe panel with 5 W’s &amp; H">
                 </div>
-                <p class="features-attribution">BibleMarker is built around the inductive Bible study approach—observation, interpretation, application. BibleMarker is independent software and is not affiliated with or endorsed by Precept Ministries International or any other organization.</p>
+                <div class="feature-text">
+                    <h2>Record What You See</h2>
+                    <p>The Observe panel is your structured notebook for the text. Make lists of what you learn about key people or themes, answer the 5 W’s &amp; H (Who, What, When, Where, Why, How), note contrasts and comparisons, tag time expressions, and track places and people — all anchored to the passage you’re studying.</p>
+                </div>
             </div>
         </section>
 
-        <section class="translations">
+        <section class="feature-section bg-light">
             <div class="container">
-                <h2>Bible Translations</h2>
-                <p>NASB 2020 and NASB 1995 are included and work fully offline with no setup. Additional translations are available as downloadable SWORD modules or via an optional ESV API key.</p>
-                <div class="translation-list">
-                    <div class="translation-item">NASB 2020 — included</div>
-                    <div class="translation-item">NASB 1995 — included</div>
-                    <div class="translation-item">ESV (English Standard Version)*</div>
-                    <div class="translation-item">KJV (King James Version)</div>
-                    <div class="translation-item">ASV (American Standard Version)</div>
-                    <div class="translation-item">WEB (World English Bible)</div>
-                    <div class="translation-item">And more via SWORD modules...</div>
+                <div class="feature-text">
+                    <h2>See the Bigger Picture</h2>
+                    <p>The Analyze panel turns your observations into insight. View time expressions on a timeline, explore geographic locations on an interactive map, and work through interpretation and application worksheets. Chapter summaries, book overviews, and theme tracking give structure to a full study.</p>
                 </div>
-                <p class="note"><strong>ESV:</strong> Requires a free API key from <a href="https://api.esv.org" target="_blank" rel="noopener noreferrer">Crossway's ESV API</a>, subject to noncommercial use terms. Configure it in Settings → Bible.</p>
+                <div class="feature-image">
+                    <img src="images/screenshot-places-map.png" alt="BibleMarker — Analyze panel with places map">
+                </div>
             </div>
         </section>
 
         <section class="downloads" id="downloads">
             <div class="container">
                 <h2>Ready for Deeper Bible Study?</h2>
+                <p class="downloads-free">Free. No subscription. No account required.</p>
                 <div class="dl-grid">
                     <div class="dl-col">
                         <p class="dl-os">macOS</p>
@@ -157,6 +97,7 @@
                         <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-linux-x64.rpm" class="dl-btn dl-btn-alt" target="_blank" rel="noopener noreferrer">.rpm (Fedora/RHEL)</a>
                     </div>
                 </div>
+                <p class="translations-note">NASB 2020 and NASB 1995 are included. Additional translations available via downloadable SWORD modules or an ESV API key.</p>
                 <p class="download-github"><a href="https://github.com/spearssoftware/BibleMarker/releases" target="_blank" rel="noopener noreferrer">View all releases on GitHub →</a></p>
                 <p class="mobile-stores">iOS: <a href="https://github.com/spearssoftware/BibleMarker/releases" target="_blank" rel="noopener noreferrer">Available now</a> &nbsp;•&nbsp; Android: <span class="coming-soon">Coming Soon</span></p>
             </div>

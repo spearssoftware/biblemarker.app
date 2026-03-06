@@ -114,189 +114,38 @@ nav .container {
     margin-top: 1rem;
 }
 
-/* Screenshot / Carousel Section */
-.screenshot {
-    padding: 2rem 0;
-    background-color: var(--bg-light);
-}
-
-.screenshot .container {
-    text-align: center;
-}
-
-.carousel {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-    width: 100%;
-}
-
-.carousel-slides {
-    position: relative;
-    width: 100%;
-    /* height set by the tallest image; use aspect-ratio to prevent layout shift */
-}
-
-.carousel-slide {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    max-height: 70vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: var(--shadow-lg);
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.6s ease;
-    pointer-events: none;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-    position: relative;
-    pointer-events: auto;
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.carousel-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--border-color);
-    cursor: pointer;
-    padding: 0;
-    transition: background-color 0.2s;
-}
-
-.carousel-dot.active {
-    background-color: var(--primary-color);
-}
-
-.carousel-dot:hover {
-    background-color: var(--primary-dark);
-}
-
-/* Features Section */
-.features {
-    padding: 4rem 0;
+/* Feature Sections */
+.feature-section {
+    padding: 5rem 0;
     background-color: var(--bg-color);
 }
 
-.features h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
-
-.features-intro {
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 720px;
-    margin: 0 auto 2.5rem;
-    line-height: 1.7;
-}
-
-.features-intro strong {
-    color: var(--text-color);
-}
-
-.features-attribution {
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-top: 2rem;
-    font-style: italic;
-}
-
-.features-attribution a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.features-attribution a:hover {
-    text-decoration: underline;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-}
-
-.feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
-
-.feature-card p {
-    color: var(--text-light);
-    line-height: 1.7;
-}
-
-/* Translations Section */
-.translations {
-    padding: 4rem 0;
+.feature-section.bg-light {
     background-color: var(--bg-light);
 }
 
-.translations h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.translations > .container > p {
-    text-align: center;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-}
-
-.translation-list {
+.feature-section .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
-.translation-item {
-    background: var(--bg-light);
-    padding: 1rem;
-    border-radius: 6px;
-    text-align: center;
-    font-weight: 500;
+.feature-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.translations .note {
-    text-align: center;
-    font-size: 0.9rem;
+.feature-section p {
     color: var(--text-light);
-    font-style: italic;
+    line-height: 1.8;
+}
+
+.feature-section img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
 }
 
 /* Downloads Section */
@@ -308,7 +157,20 @@ nav .container {
 
 .downloads h2 {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.downloads-free {
+    font-size: 1.1rem;
+    color: var(--text-light);
     margin-bottom: 1.5rem;
+}
+
+.translations-note {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
 }
 
 .download-buttons {
@@ -614,22 +476,13 @@ footer p {
         font-size: 0.9rem;
     }
 
-    .features h2,
-    .translations h2,
-    .cta h2 {
-        font-size: 2rem;
-    }
-
-    .feature-grid {
+    .feature-section .container {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
-    .download-buttons {
-        flex-direction: column;
-    }
-
-    .download-platforms {
-        grid-template-columns: 1fr;
+    .feature-section h2 {
+        font-size: 1.5rem;
     }
 
     footer .container {
