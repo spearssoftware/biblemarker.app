@@ -46,7 +46,7 @@
                 <h3>1.2 Automatically Collected Information</h3>
                 <ul>
                     <li><strong>Bible Text:</strong> The app reads Bible text from local SWORD module files stored on your device. No network requests are made for SWORD module content.</li>
-                    <li><strong>ESV Caching:</strong> If you use the ESV API, fetched chapters are not cached locally; each request goes directly from your device to Crossway's servers.</li>
+                    <li><strong>ESV Caching:</strong> If you use the ESV API, fetched chapters may be cached locally on your device for offline access. Requests go directly from your device to Crossway's servers using your own API key.</li>
                     <li><strong>Usage Data:</strong> The app stores local usage preferences and settings on your device.</li>
                 </ul>
 
@@ -70,6 +70,7 @@
                 <ul>
                     <li><strong>Local Storage:</strong> All user data (annotations, notes, keywords, studies, API keys) is stored locally on your device in a SQLite database.</li>
                     <li><strong>iCloud Sync (optional):</strong> On macOS and iOS, you may enable iCloud sync. When enabled, the app writes journal files to your iCloud Drive to synchronize study data across your own devices. This data is stored in your personal iCloud account and is not accessible to Kevin Spears.</li>
+                    <li><strong>Backup &amp; Export:</strong> You can export your data as backup files (JSON) or study exports (Markdown) saved to your device's Documents folder. On iOS, these files are accessible via the Files app. Exported files remain on your device and are not transmitted to any server.</li>
                     <li><strong>Security:</strong> While we implement reasonable security measures, no method of electronic storage is 100% secure. You are responsible for maintaining the security of your device.</li>
                 </ul>
 
@@ -122,7 +123,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kevin Spears. All rights reserved.</p>
+            <p>&copy; 2025–2026 Kevin Spears. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="privacy.html">Privacy</a></li>
                 <li><a href="support.html">Support</a></li>
