@@ -1,23 +1,18 @@
 ---
-const currentPath = Astro.url.pathname;
+import { navLinks, isActive } from '../config/nav';
 
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/getting-started/', label: 'Docs' },
-  { href: '/privacy/', label: 'Privacy' },
-  { href: '/contact/', label: 'Contact' },
-];
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="nav">
-  <div class="container nav-inner">
+  <div class="nav-inner">
     <a href="/" class="nav-brand">BibleMarker</a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span class="hamburger"></span>
     </button>
     <nav class="nav-links">
-      {links.map(link => (
-        <a href={link.href} class:list={[{ active: currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href)) }]}>
+      {navLinks.map(link => (
+        <a href={link.href} class:list={[{ active: isActive(link, currentPath) }]}>
           {link.label}
         </a>
       ))}
@@ -52,6 +47,7 @@ const links = [
     justify-content: space-between;
     align-items: center;
     padding: 0.875rem 1.5rem;
+    width: 100%;
   }
 
   .nav-brand {
@@ -84,19 +80,19 @@ const links = [
     color: var(--color-primary);
   }
 
-  .nav-cta {
+  .nav-links a.nav-cta {
     padding: 0.5rem 1.15rem;
     background: var(--color-primary);
-    color: #fff !important;
+    color: #fff;
     border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 0.9rem;
     transition: background 0.2s;
   }
 
-  .nav-cta:hover {
+  .nav-links a.nav-cta:hover {
     background: var(--color-primary-hover);
-    color: #fff !important;
+    color: #fff;
   }
 
   .nav-toggle {
@@ -149,9 +145,7 @@ const links = [
       left: 0;
       right: 0;
       flex-direction: column;
-      background: var(--color-nav-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: var(--color-bg);
       border-bottom: 1px solid var(--color-nav-border);
       padding: 1rem 1.5rem;
       gap: 0.75rem;
@@ -161,7 +155,7 @@ const links = [
       display: flex;
     }
 
-    .nav-cta {
+    .nav-links a.nav-cta {
       text-align: center;
       width: 100%;
     }

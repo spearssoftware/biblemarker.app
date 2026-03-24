@@ -27,7 +27,11 @@ export default defineConfig({
           ],
         },
         { label: 'Keyboard Shortcuts', slug: 'keyboard-shortcuts' },
+        { label: 'Privacy Policy', slug: 'privacy' },
       ],
+      components: {
+        Header: './src/components/StarlightHeader.astro',
+      },
       customCss: ['./src/styles/global.css'],
     }),
     react(),
