@@ -1,0 +1,73 @@
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; 2026 Spears Software. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/getting-started/">Docs</a>
+      <a href="/support/">Support</a>
+    </nav>
+    <p class="footer-attr">BibleMarker is an app by <a href="https://spearssoftware.com">Spears Software</a></p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 0;
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-copy {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: var(--color-primary);
+  }
+
+  .footer-attr {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  .footer-attr a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .footer-attr a:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

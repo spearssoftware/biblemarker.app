@@ -1,0 +1,306 @@
+---
+import Landing from '../layouts/Landing.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Landing title="BibleMarker - Inductive Bible Study App">
+  <Nav />
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>BibleMarker</h1>
+      <p class="lead">Bible study built on the precepts of inductive study — observation, interpretation, and application</p>
+      <p class="platforms">iOS &bull; macOS &bull; Windows &bull; Linux</p>
+    </div>
+  </section>
+
+  <section class="feature alt-bg">
+    <div class="container feature-grid">
+      <div class="feature-text">
+        <h2>Mark What Matters</h2>
+        <p>Key words are the foundation of inductive study — authors repeat them to drive their point home. Define a keyword once with a color and symbol, and BibleMarker tracks every occurrence across the text automatically. Use case-sensitive matching when precision matters, and dismiss false positives with a tap. Select any word to apply an existing keyword, create a new one, or look up the original Hebrew or Greek via Strong's Numbers.</p>
+      </div>
+      <div class="feature-img">
+        <div class="device-frame">
+          <img src="/images/screenshot-reading.png" alt="BibleMarker — reading with keyword markings" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container feature-grid reverse">
+      <div class="feature-text">
+        <h2>Record What You See</h2>
+        <p>The Observe panel is your structured notebook for the text. Make lists of what you learn about key people or themes, answer the 5 W's &amp; H (Who, What, When, Where, Why, How), note contrasts and comparisons, tag time expressions, and track places and people — all anchored to the passage you're studying.</p>
+      </div>
+      <div class="feature-img">
+        <div class="device-frame">
+          <img src="/images/screenshot-observe.png" alt="BibleMarker — Observe panel with 5 W's &amp; H" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature alt-bg">
+    <div class="container feature-grid">
+      <div class="feature-text">
+        <h2>See the Bigger Picture</h2>
+        <p>The Analyze panel turns your observations into insight. View time expressions on a timeline, explore geographic locations on an interactive OpenFreeMap map, and work through interpretation and application worksheets. Chapter summaries, book overviews, and theme tracking give structure to a full study.</p>
+      </div>
+      <div class="feature-img">
+        <div class="device-frame">
+          <img src="/images/screenshot-places-map.png" alt="BibleMarker — Analyze panel with places map" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="downloads" id="downloads">
+    <div class="container">
+      <h2>Ready for Deeper Bible Study?</h2>
+      <span class="free-badge">Free forever — no account required</span>
+      <div class="dl-grid">
+        <div class="dl-col">
+          <p class="dl-os">iOS</p>
+          <a href="https://apps.apple.com/us/app/biblemarker/id6759001361" class="dl-btn" target="_blank" rel="noopener noreferrer">App Store</a>
+        </div>
+        <div class="dl-col">
+          <p class="dl-os">macOS</p>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-macos-aarch64.zip" class="dl-btn" target="_blank" rel="noopener noreferrer">Apple Silicon</a>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-macos-x64.zip" class="dl-btn dl-btn-alt" target="_blank" rel="noopener noreferrer">Intel</a>
+        </div>
+        <div class="dl-col">
+          <p class="dl-os">Windows</p>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-windows-x64-setup.exe" class="dl-btn" target="_blank" rel="noopener noreferrer">Installer (.exe)</a>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-windows-x64.msi" class="dl-btn dl-btn-alt" target="_blank" rel="noopener noreferrer">MSI</a>
+        </div>
+        <div class="dl-col">
+          <p class="dl-os">Linux</p>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-linux-x64.AppImage" class="dl-btn" target="_blank" rel="noopener noreferrer">AppImage</a>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-linux-x64.deb" class="dl-btn dl-btn-alt" target="_blank" rel="noopener noreferrer">.deb</a>
+          <a href="https://github.com/spearssoftware/BibleMarker/releases/latest/download/BibleMarker-linux-x64.rpm" class="dl-btn dl-btn-alt" target="_blank" rel="noopener noreferrer">.rpm</a>
+        </div>
+      </div>
+      <p class="translations-note">NASB 2020 and NASB 1995 are included. Additional translations available via downloadable SWORD modules or an ESV API key.</p>
+      <p class="dl-github"><a href="https://github.com/spearssoftware/BibleMarker/releases" target="_blank" rel="noopener noreferrer">View all releases on GitHub &rarr;</a></p>
+      <p class="mobile-stores">Android: <span class="coming-soon">Coming Soon</span></p>
+    </div>
+  </section>
+
+  <Footer />
+</Landing>
+
+<style>
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #fff;
+    padding: 3rem 0 2.75rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .lead {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    opacity: 0.95;
+    max-width: 580px;
+    margin: 0 auto 0.5rem;
+    line-height: 1.5;
+  }
+
+  .platforms {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.35rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* Features */
+  .feature {
+    padding: 5rem 0;
+  }
+
+  .alt-bg {
+    background: var(--color-bg-elevated);
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .feature-grid.reverse .feature-text {
+    order: 2;
+  }
+
+  .feature-grid.reverse .feature-img {
+    order: 1;
+  }
+
+  .feature-text h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .feature-text p {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+
+  .device-frame {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+  }
+
+  .device-frame img {
+    display: block;
+    width: 100%;
+  }
+
+  /* Downloads */
+  .downloads {
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+
+  .downloads h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .free-badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .dl-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .dl-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .dl-os {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.2rem;
+  }
+
+  a.dl-btn {
+    display: block;
+    padding: 0.5rem 0.85rem;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  a.dl-btn:hover {
+    background: var(--color-primary-hover);
+    color: #fff;
+  }
+
+  a.dl-btn.dl-btn-alt {
+    background: var(--color-bg-elevated);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+  }
+
+  a.dl-btn.dl-btn-alt:hover {
+    background: var(--color-border);
+    color: var(--color-text);
+  }
+
+  .translations-note {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .dl-github {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .dl-github a {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  .dl-github a:hover {
+    text-decoration: underline;
+  }
+
+  .mobile-stores {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+  }
+
+  .coming-soon {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    background: var(--color-bg-elevated);
+    border-radius: var(--radius-sm);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .feature-grid.reverse .feature-text,
+    .feature-grid.reverse .feature-img {
+      order: unset;
+    }
+
+    .dl-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dl-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
