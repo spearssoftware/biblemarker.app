@@ -8,6 +8,7 @@ export const navLinks: NavLink[] = [
   { href: '/getting-started/', label: 'Docs' },
   { href: '/privacy/', label: 'Privacy' },
   { href: '/support/', label: 'Support' },
+  { href: '/share/', label: 'Share' },
 ];
 
 const docsPrefixes = ['/getting-started', '/guides/', '/keyboard-shortcuts'];
