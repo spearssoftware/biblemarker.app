@@ -1,0 +1,78 @@
+---
+import Landing from '../layouts/Landing.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Landing title="Share BibleMarker" description="Share BibleMarker with friends and family. Scan the QR code to download from the App Store.">
+  <Nav />
+
+  <section class="share">
+    <div class="container">
+      <h1>Share BibleMarker</h1>
+      <p class="subtitle">Scan the QR code to download from the App Store</p>
+      <a href="https://apps.apple.com/us/app/biblemarker/id6759001361" target="_blank" rel="noopener noreferrer" class="qr-wrapper">
+        <img src="/images/qr-appstore.svg" alt="Scan to download BibleMarker on the App Store" width="240" height="240" />
+      </a>
+      <a href="https://apps.apple.com/us/app/biblemarker/id6759001361" class="store-btn" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+      <p class="hint">Or visit <strong>biblemarker.app</strong> for all platforms</p>
+    </div>
+  </section>
+
+  <Footer />
+</Landing>
+
+<style>
+  .share {
+    padding: 5rem 0 4rem;
+    text-align: center;
+  }
+
+  .share h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .qr-wrapper {
+    display: inline-block;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+  }
+
+  .qr-wrapper img {
+    display: block;
+  }
+
+  .store-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .store-btn:hover {
+    background: var(--color-primary-hover);
+    color: #fff;
+  }
+
+  .hint {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+</style>

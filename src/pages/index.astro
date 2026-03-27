@@ -65,6 +65,9 @@ import Footer from '../components/Footer.astro';
         <div class="dl-col">
           <p class="dl-os">iOS</p>
           <a href="https://apps.apple.com/us/app/biblemarker/id6759001361" class="dl-btn" target="_blank" rel="noopener noreferrer">App Store</a>
+          <a href="https://apps.apple.com/us/app/biblemarker/id6759001361" target="_blank" rel="noopener noreferrer" class="qr-link">
+            <img src="/images/qr-appstore.svg" alt="Scan to download on the App Store" class="qr-code" width="100" height="100" />
+          </a>
         </div>
         <div class="dl-col">
           <p class="dl-os">macOS</p>
@@ -279,6 +282,22 @@ import Footer from '../components/Footer.astro';
     color: var(--color-text-muted);
     background: var(--color-bg-elevated);
     border-radius: var(--radius-sm);
+  }
+
+  .qr-link {
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  .qr-code {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .qr-code:hover {
+    opacity: 1;
   }
 
   /* Responsive */
