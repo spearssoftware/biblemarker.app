@@ -4,26 +4,43 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Landing title="BibleMarker - Inductive Bible Study App">
+<Landing
+  title="BibleMarker 2.0 - Inductive Bible Study App"
+  description="BibleMarker 2.0 brings inductive Bible study together with Gnosis, a curated biblical knowledge graph for people, places, events, cross-references, original-language tools, and more."
+  ogImage="/images/screenshot-mark-scripture.png"
+>
   <Nav />
 
   <section class="hero">
     <div class="container hero-inner">
-      <h1>BibleMarker</h1>
-      <p class="lead">Bible study built on the precepts of inductive study — observation, interpretation, and application</p>
-      <p class="platforms">iOS &bull; macOS &bull; Windows &bull; Linux</p>
+      <div class="hero-copy">
+        <p class="eyebrow">BibleMarker 2.0 is here</p>
+        <h1>Mark Scripture. Observe deeply. See the connections.</h1>
+        <p class="lead">Inductive Bible study built around observation, interpretation, and application — now powered by Gnosis, a curated biblical knowledge graph with places, people, events, cross-references, and original-language references.</p>
+        <div class="hero-actions">
+          <a href="#downloads" class="hero-btn">Download 2.0</a>
+          <a href="#gnosis" class="hero-link">Explore Gnosis</a>
+        </div>
+        <p class="platforms">iOS &bull; macOS &bull; Windows &bull; Linux</p>
+      </div>
+      <div class="hero-shot" aria-hidden="true">
+        <div class="device-frame hero-device">
+          <img src="/images/screenshot-mark-scripture.png" alt="" />
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="feature alt-bg">
     <div class="container feature-grid">
       <div class="feature-text">
-        <h2>Mark What Matters</h2>
-        <p>Key words are the foundation of inductive study — authors repeat them to drive their point home. Define a keyword once with a color and symbol, and BibleMarker tracks every occurrence across the text automatically. Use case-sensitive matching when precision matters, and dismiss false positives with a tap. Select any word to apply an existing keyword, create a new one, or look up the original Hebrew or Greek via Strong's Numbers.</p>
+        <p class="section-kicker">Mark</p>
+        <h2>Mark what matters</h2>
+        <p>Key words are the foundation of inductive study — authors repeat them to drive their point home. Define a keyword once with a color and symbol, then BibleMarker tracks every occurrence across the text automatically. Select any word to apply an existing keyword, create a new one, or look up the original Hebrew or Greek.</p>
       </div>
-      <div class="feature-img">
+      <div class="feature-img portrait-img">
         <div class="device-frame">
-          <img src="/images/screenshot-reading.png" alt="BibleMarker — reading with keyword markings" />
+          <img src="/images/screenshot-mark-scripture.png" alt="BibleMarker 2.0 reading view with keyword markings" />
         </div>
       </div>
     </div>
@@ -32,12 +49,13 @@ import Footer from '../components/Footer.astro';
   <section class="feature">
     <div class="container feature-grid reverse">
       <div class="feature-text">
-        <h2>Record What You See</h2>
-        <p>The Observe panel is your structured notebook for the text. Make lists of what you learn about key people or themes, answer the 5 W's &amp; H (Who, What, When, Where, Why, How), note contrasts and comparisons, tag time expressions, and track places and people — all anchored to the passage you're studying.</p>
+        <p class="section-kicker">Observe</p>
+        <h2>Record what you see</h2>
+        <p>The Observe panel is your structured notebook for the text. Make lists of what you learn about key people or themes, answer the 5 W's &amp; H, note contrasts and comparisons, tag time expressions, and track places and people — all anchored to the passage you're studying.</p>
       </div>
-      <div class="feature-img">
+      <div class="feature-img portrait-img">
         <div class="device-frame">
-          <img src="/images/screenshot-observe.png" alt="BibleMarker — Observe panel with 5 W's &amp; H" />
+          <img src="/images/screenshot-observe-connections.png" alt="BibleMarker 2.0 Observe panel for recording study connections" />
         </div>
       </div>
     </div>
@@ -46,12 +64,57 @@ import Footer from '../components/Footer.astro';
   <section class="feature alt-bg">
     <div class="container feature-grid">
       <div class="feature-text">
-        <h2>See the Bigger Picture</h2>
-        <p>The Analyze panel turns your observations into insight. View time expressions on a timeline, explore geographic locations on an interactive OpenFreeMap map, and work through interpretation and application worksheets. Chapter summaries, book overviews, and theme tracking give structure to a full study.</p>
+        <p class="section-kicker">Analyze</p>
+        <h2>See the bigger picture</h2>
+        <p>The Analyze panel turns your observations into insight. View time expressions on a timeline, explore geographic locations on an interactive map, and work through interpretation and application worksheets. Chapter summaries, book overviews, and theme tracking give structure to a full study.</p>
       </div>
-      <div class="feature-img">
+      <div class="feature-img portrait-img">
         <div class="device-frame">
-          <img src="/images/screenshot-places-map.png" alt="BibleMarker — Analyze panel with places map" />
+          <img src="/images/screenshot-analyze.png" alt="BibleMarker 2.0 Analyze panel with study tools" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container feature-grid reverse">
+      <div class="feature-text">
+        <p class="section-kicker">Reference</p>
+        <h2>Go from marking to meaning</h2>
+        <p>The Reference tools bring Gnosis into your study flow. Search people, places, events, topics, dictionaries, cross-references, and original-language entries without leaving the passage you're working through.</p>
+      </div>
+      <div class="feature-img portrait-img">
+        <div class="device-frame">
+          <img src="/images/screenshot-reference.png" alt="BibleMarker 2.0 Reference panel powered by Gnosis" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gnosis" id="gnosis">
+    <div class="container gnosis-inner">
+      <div class="gnosis-copy">
+        <p class="section-kicker">New in 2.0</p>
+        <h2>Powered by Gnosis</h2>
+        <p>Gnosis is BibleMarker's curated biblical knowledge graph: a clean, versioned dataset that brings together open-licensed Bible metadata, maps, lexicons, dictionaries, topics, morphology, cross-references, and semantic search indexes.</p>
+        <a href="https://gnosistool.com" target="_blank" rel="noopener noreferrer" class="text-link">Learn more about Gnosis &rarr;</a>
+      </div>
+      <div class="gnosis-cards">
+        <div class="gnosis-card">
+          <strong>11</strong>
+          <span>open-licensed upstream sources</span>
+        </div>
+        <div class="gnosis-card">
+          <strong>340k+</strong>
+          <span>verse-to-verse cross-references</span>
+        </div>
+        <div class="gnosis-card">
+          <strong>People, places, events</strong>
+          <span>with verse references, dates, relationships, and map coordinates</span>
+        </div>
+        <div class="gnosis-card">
+          <strong>Greek &amp; Hebrew</strong>
+          <span>Strong's entries, lexicons, morphology, lemmas, and original-language helps</span>
         </div>
       </div>
     </div>
@@ -59,7 +122,7 @@ import Footer from '../components/Footer.astro';
 
   <section class="downloads" id="downloads">
     <div class="container">
-      <h2>Ready for Deeper Bible Study?</h2>
+      <h2>Ready for BibleMarker 2.0?</h2>
       <span class="free-badge">Free forever — no account required</span>
       <div class="dl-grid">
         <div class="dl-col">
@@ -96,37 +159,105 @@ import Footer from '../components/Footer.astro';
 </Landing>
 
 <style>
-  /* Hero */
   .hero {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background: radial-gradient(circle at 80% 20%, rgba(191, 219, 254, 0.35), transparent 32%), linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
     color: #fff;
-    padding: 3rem 0 2.75rem;
-    text-align: center;
+    overflow: hidden;
+    padding: 4.5rem 0 4rem;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.8fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .eyebrow,
+  .section-kicker {
+    margin-bottom: 0.75rem;
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .hero .eyebrow {
+    color: #bfdbfe;
   }
 
   .hero h1 {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.02em;
+    max-width: 760px;
+    font-size: clamp(2.4rem, 6vw, 4.75rem);
+    font-weight: 850;
+    line-height: 0.98;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.055em;
   }
 
   .lead {
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
-    opacity: 0.95;
-    max-width: 580px;
-    margin: 0 auto 0.5rem;
-    line-height: 1.5;
+    max-width: 680px;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    opacity: 0.93;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.75rem;
+  }
+
+  .hero-btn,
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.7rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+  }
+
+  .hero-btn {
+    background: #fff;
+    color: #1d4ed8;
+  }
+
+  .hero-btn:hover {
+    color: #1e40af;
+  }
+
+  .hero-link {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff;
+  }
+
+  .hero-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .platforms {
     font-size: 0.85rem;
     opacity: 0.8;
-    margin-top: 0.35rem;
+    margin-top: 1.15rem;
     letter-spacing: 0.03em;
   }
 
-  /* Features */
+  .hero-shot {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-device {
+    width: min(100%, 390px);
+    transform: rotate(2deg);
+    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.36);
+  }
+
   .feature {
     padding: 5rem 0;
   }
@@ -150,16 +281,26 @@ import Footer from '../components/Footer.astro';
     order: 1;
   }
 
-  .feature-text h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+  .feature-text h2,
+  .gnosis h2,
+  .downloads h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.12;
     margin-bottom: 1rem;
     color: var(--color-text);
+    letter-spacing: -0.03em;
   }
 
-  .feature-text p {
+  .feature-text p:not(.section-kicker),
+  .gnosis-copy p:not(.section-kicker) {
     color: var(--color-text-muted);
     line-height: 1.8;
     font-size: 1.05rem;
+  }
+
+  .portrait-img {
+    max-width: 420px;
+    margin: 0 auto;
   }
 
   .device-frame {
@@ -167,6 +308,7 @@ import Footer from '../components/Footer.astro';
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border);
+    background: #fff;
   }
 
   .device-frame img {
@@ -174,15 +316,69 @@ import Footer from '../components/Footer.astro';
     width: 100%;
   }
 
-  /* Downloads */
+  .gnosis {
+    padding: 5rem 0;
+    background: #0f172a;
+    color: #fff;
+  }
+
+  .gnosis-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .gnosis h2,
+  .gnosis-copy p:not(.section-kicker) {
+    color: #fff;
+  }
+
+  .gnosis-copy p:not(.section-kicker) {
+    opacity: 0.82;
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: #bfdbfe;
+    font-weight: 700;
+  }
+
+  .text-link:hover {
+    color: #fff;
+  }
+
+  .gnosis-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gnosis-card {
+    min-height: 150px;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .gnosis-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.05;
+  }
+
+  .gnosis-card span {
+    color: rgba(255, 255, 255, 0.74);
+    line-height: 1.55;
+  }
+
   .downloads {
     padding: 4rem 0 3rem;
     text-align: center;
-  }
-
-  .downloads h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: 0.75rem;
   }
 
   .free-badge {
@@ -300,7 +496,21 @@ import Footer from '../components/Footer.astro';
     opacity: 1;
   }
 
-  /* Responsive */
+  @media (max-width: 900px) {
+    .hero-inner,
+    .gnosis-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding-top: 3.25rem;
+    }
+
+    .hero-shot {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     .feature-grid {
       grid-template-columns: 1fr;
@@ -312,14 +522,22 @@ import Footer from '../components/Footer.astro';
       order: unset;
     }
 
+    .gnosis-cards,
     .dl-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 480px) {
+    .hero-actions,
+    .gnosis-cards,
     .dl-grid {
       grid-template-columns: 1fr;
+    }
+
+    .hero-btn,
+    .hero-link {
+      width: 100%;
     }
   }
 </style>
