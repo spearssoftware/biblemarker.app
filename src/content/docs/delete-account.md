@@ -32,3 +32,7 @@ These are removed from our active systems immediately upon confirmation, and fro
 
 - **Study data stored locally on your devices is not deleted.** Deleting your account only removes the copy on our servers and signs you out; the studies on your device remain so you can keep using the app offline.
 - To remove the local copy, delete individual studies in the app or uninstall the app from each device.
+
+## Deleting specific data without deleting your account
+
+You don't have to delete your whole account to remove data. While signed in, deleting a study, keyword, note, or annotation in the app also removes it from our servers the next time your device syncs. The rest of your account and synced data stays intact.
