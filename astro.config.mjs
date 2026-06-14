@@ -28,6 +28,7 @@ export default defineConfig({
         },
         { label: 'Keyboard Shortcuts', slug: 'keyboard-shortcuts' },
         { label: 'Privacy Policy', slug: 'privacy' },
+        { label: 'Delete Your Account', slug: 'delete-account' },
       ],
       components: {
         Header: './src/components/StarlightHeader.astro',
