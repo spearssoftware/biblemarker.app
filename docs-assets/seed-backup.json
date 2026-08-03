@@ -1,0 +1,431 @@
+{
+  "version": "3.2.1",
+  "timestamp": "2026-08-03T16:00:00.000Z",
+  "data": {
+    "preferences": {
+      "id": "main",
+      "currentModuleId": "sword-ASV",
+      "currentBook": "John",
+      "currentChapter": 1,
+      "marking": {
+        "recentColors": [
+          "gold",
+          "green",
+          "blue"
+        ],
+        "recentSymbols": [
+          "sun",
+          "book"
+        ],
+        "defaultTool": "highlight",
+        "defaultColor": "yellow",
+        "defaultSymbol": "cross",
+        "toolbarPosition": "bottom",
+        "showToolbarByDefault": true
+      },
+      "fontSize": "base",
+      "theme": "dark",
+      "favoriteTranslations": [],
+      "recentTranslations": [
+        "sword-ASV"
+      ],
+      "recentBooks": [
+        "John"
+      ]
+    },
+    "annotations": [
+      {
+        "id": "fcf2dfa0-7e01-4099-9445-e0a1a1e90c21",
+        "moduleId": "sword-ASV",
+        "type": "highlight",
+        "startRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 5
+        },
+        "endRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 5
+        },
+        "startWordIndex": 11,
+        "endWordIndex": 11,
+        "selectedText": "it",
+        "startOffset": 68,
+        "endOffset": 70,
+        "color": "gold",
+        "presetId": "7fadd55e-d6c0-41f1-8153-3426978baf64",
+        "createdAt": "2026-07-27T19:41:00.000Z",
+        "updatedAt": "2026-07-27T19:41:00.000Z"
+      },
+      {
+        "id": "4c13dc2a-c7cb-461b-8f4c-75b61a7c24a3",
+        "moduleId": "sword-ASV",
+        "type": "symbol",
+        "ref": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 5
+        },
+        "wordIndex": 11,
+        "position": "before",
+        "selectedText": "it",
+        "startWordIndex": 11,
+        "endWordIndex": 11,
+        "startOffset": 68,
+        "endOffset": 70,
+        "symbol": "sun",
+        "color": "gold",
+        "presetId": "7fadd55e-d6c0-41f1-8153-3426978baf64",
+        "createdAt": "2026-07-27T19:41:00.000Z",
+        "updatedAt": "2026-07-27T19:41:00.000Z"
+      }
+    ],
+    "sectionHeadings": [
+      {
+        "id": "ede20e32-a39e-4646-a216-e46174b1e61c",
+        "beforeRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 19
+        },
+        "coversUntil": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 34
+        },
+        "title": "The Witness of John",
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      }
+    ],
+    "chapterTitles": [
+      {
+        "id": "641a0973-8644-49f9-bc4b-18bbec3565ac",
+        "book": "John",
+        "chapter": 1,
+        "title": "The Word Became Flesh",
+        "createdAt": "2026-07-28T20:03:00.000Z",
+        "updatedAt": "2026-07-28T20:03:00.000Z"
+      },
+      {
+        "id": "4c07d2ca-29c5-4463-9ed9-a455c6305838",
+        "book": "John",
+        "chapter": 3,
+        "title": "You Must Be Born Again",
+        "createdAt": "2026-08-01T15:30:00.000Z",
+        "updatedAt": "2026-08-01T15:30:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "000c8864-3ae0-4c88-b26f-9702210e7cd1",
+        "moduleId": "sword-ASV",
+        "ref": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 14
+        },
+        "content": "The Word from verse 1 doesn't stay at a distance — he *became flesh* and dwelt among us. John says **we beheld his glory**, full of grace and truth. The God of eternity moved into the neighborhood.",
+        "createdAt": "2026-07-28T20:03:00.000Z",
+        "updatedAt": "2026-07-28T20:03:00.000Z"
+      }
+    ],
+    "markingPresets": [
+      {
+        "id": "7fadd55e-d6c0-41f1-8153-3426978baf64",
+        "word": "light",
+        "variants": [
+          {
+            "text": "lighteth"
+          }
+        ],
+        "symbol": "sun",
+        "highlight": {
+          "style": "highlight",
+          "color": "gold"
+        },
+        "category": "themes",
+        "description": "Light — Jesus as the true light coming into the world",
+        "autoSuggest": true,
+        "usageCount": 1,
+        "scopes": [
+          {
+            "book": "John"
+          }
+        ],
+        "createdAt": "2026-07-27T19:12:00.000Z",
+        "updatedAt": "2026-07-27T19:41:00.000Z"
+      },
+      {
+        "id": "0f76204e-1322-486b-abbd-7799f400eca7",
+        "word": "believe",
+        "variants": [
+          {
+            "text": "believed"
+          },
+          {
+            "text": "believes"
+          },
+          {
+            "text": "believeth"
+          },
+          {
+            "text": "believing"
+          }
+        ],
+        "highlight": {
+          "style": "underline",
+          "color": "green"
+        },
+        "category": "actions",
+        "description": "Believe — John's stated purpose (John 20:31)",
+        "autoSuggest": true,
+        "usageCount": 0,
+        "createdAt": "2026-07-27T19:25:00.000Z",
+        "updatedAt": "2026-07-27T19:25:00.000Z"
+      },
+      {
+        "id": "2bf33297-f9e3-4576-9bc0-667cc2aa6e3b",
+        "word": "Word",
+        "variants": [],
+        "symbol": "book",
+        "highlight": {
+          "style": "highlight",
+          "color": "blue"
+        },
+        "category": "identity",
+        "description": "The Word — capital W, John's name for Christ",
+        "autoSuggest": true,
+        "usageCount": 0,
+        "scopes": [
+          {
+            "book": "John"
+          }
+        ],
+        "caseSensitive": true,
+        "createdAt": "2026-07-28T20:03:00.000Z",
+        "updatedAt": "2026-07-28T20:03:00.000Z"
+      }
+    ],
+    "studies": [
+      {
+        "id": "43105234-d7f4-42e2-a39f-f5696be30af0",
+        "name": "Gospel of John",
+        "book": "John",
+        "isActive": false,
+        "createdAt": "2026-07-27T19:12:00.000Z",
+        "updatedAt": "2026-07-27T19:12:00.000Z"
+      }
+    ],
+    "multiTranslationViews": [],
+    "observationLists": [
+      {
+        "id": "75e94658-b87d-42f5-9c01-b1d6f19ae125",
+        "title": "Names of Jesus in John 1",
+        "keyWordId": "2bf33297-f9e3-4576-9bc0-667cc2aa6e3b",
+        "scope": {
+          "book": "John",
+          "chapters": [
+            1
+          ]
+        },
+        "items": [
+          {
+            "id": "819ced20-bc29-457d-9bf1-0f02ea712fb4",
+            "content": "the Word",
+            "verseRef": {
+              "book": "John",
+              "chapter": 1,
+              "verse": 1
+            },
+            "createdAt": "2026-07-30T18:47:00.000Z",
+            "updatedAt": "2026-07-30T18:47:00.000Z"
+          },
+          {
+            "id": "a3850240-3f13-4e30-9bbb-2b18f1c175d3",
+            "content": "the Lamb of God",
+            "verseRef": {
+              "book": "John",
+              "chapter": 1,
+              "verse": 29
+            },
+            "createdAt": "2026-07-30T18:47:00.000Z",
+            "updatedAt": "2026-07-30T18:47:00.000Z"
+          },
+          {
+            "id": "6afe28df-6c79-4831-bf7b-bb03be2e686e",
+            "content": "the Son of God",
+            "verseRef": {
+              "book": "John",
+              "chapter": 1,
+              "verse": 34
+            },
+            "createdAt": "2026-07-30T18:47:00.000Z",
+            "updatedAt": "2026-07-30T18:47:00.000Z"
+          },
+          {
+            "id": "73c6850e-57ea-466b-8f2d-48016dced440",
+            "content": "Rabbi",
+            "verseRef": {
+              "book": "John",
+              "chapter": 1,
+              "verse": 38
+            },
+            "createdAt": "2026-07-30T19:02:00.000Z",
+            "updatedAt": "2026-07-30T19:02:00.000Z"
+          },
+          {
+            "id": "71a5dc4b-537d-48ca-8ba4-1d17a71d4d54",
+            "content": "King of Israel",
+            "verseRef": {
+              "book": "John",
+              "chapter": 1,
+              "verse": 49
+            },
+            "createdAt": "2026-07-30T19:02:00.000Z",
+            "updatedAt": "2026-07-30T19:02:00.000Z"
+          }
+        ],
+        "createdAt": "2026-07-30T18:47:00.000Z",
+        "updatedAt": "2026-07-30T19:02:00.000Z"
+      }
+    ],
+    "timeExpressions": [
+      {
+        "id": "8e2093ff-961c-4812-a637-890d72097bcb",
+        "expression": "In the beginning",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 1
+        },
+        "timeOrder": 1,
+        "createdAt": "2026-07-28T20:03:00.000Z",
+        "updatedAt": "2026-07-28T20:03:00.000Z"
+      },
+      {
+        "id": "3a40f7f1-8d39-4c41-890e-25b1182e4577",
+        "expression": "On the morrow",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 29
+        },
+        "notes": "Day two of the opening week",
+        "timeOrder": 2,
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      },
+      {
+        "id": "01895a76-307a-4b44-a46c-7a3bb7d2b724",
+        "expression": "Again on the morrow",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 35
+        },
+        "timeOrder": 3,
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      },
+      {
+        "id": "7c23a646-e975-4bfc-b8fc-93eee6fa6081",
+        "expression": "On the morrow",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 43
+        },
+        "notes": "Jesus sets out for Galilee",
+        "timeOrder": 4,
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      }
+    ],
+    "places": [
+      {
+        "id": "1b0f2c62-a5d6-4e65-8462-d50888c87783",
+        "name": "Bethany beyond the Jordan",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 28
+        },
+        "notes": "Where John was baptizing",
+        "latitude": 31.8371,
+        "longitude": 35.5501,
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      },
+      {
+        "id": "2e50bec4-40ad-4146-a2d9-e0246ab4e053",
+        "name": "Galilee",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 43
+        },
+        "latitude": 32.8829,
+        "longitude": 35.5364,
+        "createdAt": "2026-07-28T20:18:00.000Z",
+        "updatedAt": "2026-07-28T20:18:00.000Z"
+      }
+    ],
+    "people": [
+      {
+        "id": "afacc98e-3099-4fc4-a487-50326c8e7ec5",
+        "name": "John the Baptist",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 6
+        },
+        "notes": "Sent from God as a witness to the light — not the light himself (1:8)",
+        "createdAt": "2026-07-27T19:25:00.000Z",
+        "updatedAt": "2026-07-27T19:25:00.000Z"
+      },
+      {
+        "id": "6fea1292-b274-4d86-861f-36fc767d5ade",
+        "name": "Jesus",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 29
+        },
+        "notes": "The Lamb of God, that taketh away the sin of the world",
+        "createdAt": "2026-07-27T19:25:00.000Z",
+        "updatedAt": "2026-07-27T19:25:00.000Z"
+      },
+      {
+        "id": "b64286a7-917e-49b4-8d9f-95347e34900e",
+        "name": "Moses",
+        "verseRef": {
+          "book": "John",
+          "chapter": 1,
+          "verse": 17
+        },
+        "notes": "The law was given through Moses; grace and truth came through Jesus Christ",
+        "createdAt": "2026-07-28T20:03:00.000Z",
+        "updatedAt": "2026-07-28T20:03:00.000Z"
+      },
+      {
+        "id": "14b78790-9f55-4537-84b5-ce35a953acef",
+        "name": "Nicodemus",
+        "verseRef": {
+          "book": "John",
+          "chapter": 3,
+          "verse": 1
+        },
+        "notes": "A ruler of the Jews who came to Jesus by night",
+        "createdAt": "2026-08-01T15:30:00.000Z",
+        "updatedAt": "2026-08-01T15:30:00.000Z"
+      }
+    ],
+    "conclusions": [],
+    "interpretations": [],
+    "applications": [],
+    "entityNotes": [],
+    "keywordExclusions": []
+  }
+}
