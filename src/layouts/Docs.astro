@@ -1,0 +1,141 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { docsNav } from '../config/docsNav';
+
+interface Props {
+  title: string;
+  description?: string;
+  slug: string;
+}
+
+const { title, description, slug } = Astro.props;
+const pageTitle = `${title} - BibleMarker`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:type" content="article" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Nav />
+
+    <div class="docs-shell container">
+      <aside class="docs-sidebar">
+        <div id="docs-search"></div>
+        {docsNav.map(group => (
+          <div class="docs-nav-group">
+            <p class="docs-nav-label">{group.label}</p>
+            <ul>
+              {group.items.map(item => (
+                <li>
+                  <a href={`/docs/${item.slug}/`} class:list={[{ active: item.slug === slug }]}>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </aside>
+
+      <main class="docs-content prose">
+        <h1>{title}</h1>
+        <slot />
+      </main>
+    </div>
+
+    <Footer />
+
+    <script is:inline src="/pagefind/pagefind-ui.js" defer></script>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        if (typeof PagefindUI === 'function') {
+          new PagefindUI({ element: '#docs-search', showSubResults: true });
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .docs-shell {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 3rem;
+    padding: 2.5rem 1.5rem 4rem;
+    align-items: start;
+  }
+
+  .docs-sidebar {
+    position: sticky;
+    top: 5.5rem;
+  }
+
+  .docs-nav-group {
+    margin-bottom: 1.75rem;
+  }
+
+  .docs-nav-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+  }
+
+  .docs-nav-group ul {
+    list-style: none;
+  }
+
+  .docs-nav-group li {
+    margin-bottom: 0.35rem;
+  }
+
+  .docs-nav-group a {
+    display: block;
+    padding: 0.3rem 0;
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .docs-nav-group a:hover {
+    color: var(--color-text);
+  }
+
+  .docs-nav-group a.active {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .docs-content {
+    min-width: 0;
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .docs-shell {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .docs-sidebar {
+      position: static;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 1.5rem;
+    }
+  }
+</style>

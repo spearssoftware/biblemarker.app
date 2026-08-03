@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -31,52 +33,3 @@ const { title, description = 'Bible study built on the precepts of inductive stu
     <slot />
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --color-primary: #2563eb;
-    --color-primary-hover: #1d4ed8;
-    --color-primary-light: #dbeafe;
-    --color-bg: #ffffff;
-    --color-bg-elevated: #f8fafc;
-    --color-text: #0f172a;
-    --color-text-muted: #64748b;
-    --color-border: #e2e8f0;
-    --color-nav-bg: rgba(255, 255, 255, 0.85);
-    --color-nav-border: rgba(226, 232, 240, 0.8);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 16px;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: var(--color-bg);
-    color: var(--color-text);
-    line-height: 1.6;
-  }
-
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--color-primary-hover);
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-</style>

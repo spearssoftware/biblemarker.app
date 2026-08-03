@@ -1,0 +1,31 @@
+---
+import Landing from '../layouts/Landing.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import * as deleteAccount from './_delete-account.md';
+---
+
+<Landing title="Delete Your Account - BibleMarker" description={deleteAccount.frontmatter.description}>
+  <Nav />
+
+  <main class="delete-account-page">
+    <div class="container">
+      <article class="prose">
+        <h1>{deleteAccount.frontmatter.title}</h1>
+        <deleteAccount.Content />
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</Landing>
+
+<style>
+  .delete-account-page {
+    padding: 3rem 0 4rem;
+  }
+
+  .delete-account-page .prose {
+    margin: 0 auto;
+  }
+</style>
