@@ -1,14 +1,7 @@
 ---
 title: Keyboard Shortcuts
-description: Quick reference for all BibleMarker keyboard shortcuts.
+description: Every keyboard shortcut in BibleMarker.
+order: 11
 ---
 
-| Shortcut | Action |
-|---|---|
-| `←` / `→` | Previous / Next chapter |
-| `J` / `K` | Next / Previous chapter (vim-style) |
-| `Cmd/Ctrl + F` | Search |
-| `1` | Mark (keywords and marking tools) |
-| `2` | Observe (lists, contrasts, time, places, people) |
-| `3` | Analyze (chapter, overview, timeline, themes, worksheets) |
-| `Esc` | Close modals |
+_This guide is being written._

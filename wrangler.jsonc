@@ -2,6 +2,7 @@
   "name": "biblemarker",
   "compatibility_date": "2026-01-31",
   "assets": {
-    "directory": "dist"
+    "directory": "dist",
+    "not_found_handling": "404-page"
   }
 }

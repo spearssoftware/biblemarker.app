@@ -5,13 +5,13 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
-  { href: '/getting-started/', label: 'Docs' },
+  { href: '/docs/', label: 'Docs' },
   { href: '/privacy/', label: 'Privacy' },
   { href: '/support/', label: 'Support' },
   { href: '/share/', label: 'Share' },
 ];
 
-const docsPrefixes = ['/getting-started', '/guides/', '/keyboard-shortcuts'];
+const docsPrefixes = ['/docs'];
 
 export function isActive(link: NavLink, currentPath: string): boolean {
   if (link.label === 'Docs') {

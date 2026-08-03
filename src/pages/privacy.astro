@@ -1,0 +1,31 @@
+---
+import Landing from '../layouts/Landing.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import * as privacy from './_privacy.md';
+---
+
+<Landing title="Privacy Policy - BibleMarker" description={privacy.frontmatter.description}>
+  <Nav />
+
+  <main class="privacy-page">
+    <div class="container">
+      <article class="prose">
+        <h1>{privacy.frontmatter.title}</h1>
+        <privacy.Content />
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</Landing>
+
+<style>
+  .privacy-page {
+    padding: 3rem 0 4rem;
+  }
+
+  .privacy-page .prose {
+    margin: 0 auto;
+  }
+</style>
