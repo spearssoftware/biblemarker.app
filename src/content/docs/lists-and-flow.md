@@ -51,7 +51,7 @@ Here's the idea:
 
 Think of it as the arrows you'd draw in a paper Bible's margin, connecting a truth to what it leads to — except here, your notes about each arrow are kept together in one place.
 
-## What's next
+## Where to go next
 
 - [People, Places & Time](/docs/people-places-time/) — the other three tabs in the Observe panel.
 - [The Analyze Tab](/docs/analyze/) — where your lists and observations come together into the big picture.

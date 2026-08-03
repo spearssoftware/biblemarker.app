@@ -52,4 +52,9 @@ Both live in the same place you signed in: **Settings** (⚙️) → **Backup & 
 - **Sign out** stops syncing on this device. Your studies stay on the device — nothing is deleted.
 - **Delete Account** removes your account and your synced data from the servers. Use this if you decide you no longer want anything stored online.
 
-> **Tip:** Even without an account, you can keep your work safe with a backup file. See [Settings & Backups](/docs/settings-and-backups/) for how.
+> **Tip:** Even without an account, you can keep your work safe with a backup file. [Settings & Backups](/docs/settings-and-backups/) shows you how.
+
+## Where to go next
+
+- [Create a Study](/docs/create-a-study/) — set up a named notebook for the book you're studying.
+- [Settings & Backups](/docs/settings-and-backups/) — backups, the other half of keeping your work safe.

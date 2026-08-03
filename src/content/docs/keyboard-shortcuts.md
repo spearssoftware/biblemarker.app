@@ -21,3 +21,5 @@ A couple of notes:
 
 - **Settings** has no number key — just click the **Settings** (⚙️) button at the bottom right of the screen.
 - If a shortcut doesn't seem to work, you're probably typing in a note or a text box. Click somewhere on the Bible text first, then try again. (**Esc** always works, even while typing.)
+
+And if any of those button names are new to you, [Getting Started](/docs/getting-started/) has a friendly tour of all five.

@@ -60,7 +60,7 @@ Time expressions are usually attached to a whole verse, so the steps are a touch
 
 (You can also tap **+ New Time** in the tab to add one by hand.) Notice in John 1 how "On the morrow" appears again and again — verses 29, 35, and 43. Gathered in one list, you can suddenly see it: John is walking you through this story one day at a time.
 
-## What's next
+## Where to go next
 
 Once you've gathered your people, places, and times, two good next steps:
 

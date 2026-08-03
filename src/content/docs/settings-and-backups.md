@@ -47,7 +47,7 @@ Tap the **Backup & Sync** tab. It has three sections:
 
 **Automatic backups.** The **Enable auto-backup** checkbox is on by default, and the app quietly saves a snapshot of your work every 5 minutes (**Backup Interval**), keeping the 10 most recent (**Maximum Backups to Keep**). You can change both numbers, but the settings out of the box serve most people well. Below that, **Backup Statistics** and a list show every stored backup, each with its own **Restore** button — like a filing cabinet of dated copies you can reach back into. There's also a **Create Backup Now** button if you'd like a snapshot this very moment, perhaps right before trying something new.
 
-**Save a backup file.** For extra peace of mind, tap **Export Data Backup** to save a single file containing everything — your marks, notes, and studies — anywhere you like: a folder on your computer, a thumb drive, an email to yourself. To bring it back (or move to a new device), tap **Restore from Backup** and choose that file.
+**Save a backup file.** For extra peace of mind, tap **Export Data Backup (JSON)** — JSON is just the name of the file format — to save a single file containing everything — your marks, notes, and studies — anywhere you like: a folder on your computer, a thumb drive, an email to yourself. To bring it back (or move to a new device), tap **Restore from Backup** and choose that file.
 
 **Sync across devices.** If you use BibleMarker on more than one device — say, an iPad and a computer — sync keeps them all showing the same work. It uses a simple sign-in with your email and an 8-digit code; the [Accounts & Sync](/docs/accounts-sync/) guide walks through it step by step.
 

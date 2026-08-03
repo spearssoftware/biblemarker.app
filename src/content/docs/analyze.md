@@ -55,7 +55,7 @@ The first time you open it, it will say "No interpretation entries yet" and invi
 
 The **Apply** tab is a matching worksheet for the final question: *what will I do about it?* Study that stays on the page isn't finished. This is where you write down how the passage should change your week — same simple format as Interpret, just pointed at your own life.
 
-## What's next
+## Where to go next
 
 The Analyze panel gets richer as your study grows — every key word, list, and observation you add shows up here. Two guides that feed it:
 
