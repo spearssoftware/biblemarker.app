@@ -1,11 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 import Landing from '../../layouts/Landing.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import { docsNav } from '../../config/docsNav';
-import hero from '../../assets/docs/index/index-01-hero-marked.png';
 
 const docs = await getCollection('docs');
 const guides = docsNav
@@ -23,9 +21,7 @@ const guides = docsNav
   <main class="docs-index">
     <div class="container">
       <h1>Documentation</h1>
-      <p class="docs-intro">BibleMarker brings colored-pencil Bible study to your screen — mark the words you notice, jot down what you see, and let the app keep track of it all. These guides walk you through everything, one gentle step at a time. Start with Getting Started, or jump to whichever topic you need.</p>
-
-      <Image src={hero} alt="A marked-up chapter of John 1 in BibleMarker, with key words highlighted in color" class="docs-hero" />
+      <p class="docs-intro">Guides for using BibleMarker. Start with Getting Started, or jump to the topic you need.</p>
 
       <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
       <div id="docs-search" class="docs-search"></div>
@@ -70,17 +66,6 @@ const guides = docsNav
     margin: 0 auto 2.5rem;
     font-size: 1.05rem;
     max-width: 600px;
-  }
-
-  .docs-hero {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 0 auto 2.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
   }
 
   .docs-search {
