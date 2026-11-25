@@ -3,7 +3,7 @@ title: Privacy Policy
 description: Privacy Policy for BibleMarker.
 ---
 
-*Last updated: June 2026*
+*Last updated: November 2026*
 
 Kevin Spears ("we," "our," or "us") operates the BibleMarker application and website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use BibleMarker.
 
@@ -29,8 +29,7 @@ BibleMarker is local-first: your study data is stored on your device and the app
 
 We rely on the following third parties to operate BibleMarker:
 
-- **Cloudflare:** Hosts our server infrastructure, databases, file storage, and feature-configuration service. Your account email, device identifiers, session tokens (stored only as hashes), and — if you enable sync — your study content are stored on Cloudflare's platform on our behalf.
-- **Postmark:** Delivers our sign-in emails. When you request a sign-in code, your email address and the one-time code are sent to Postmark so it can deliver the message.
+- **Cloudflare:** Hosts our server infrastructure, databases, file storage, and feature-configuration service, and delivers our sign-in emails. Your account email, device identifiers, session tokens (stored only as hashes), and — if you enable sync — your study content are stored on Cloudflare's platform on our behalf. When you request a sign-in code, Cloudflare receives your email address and the one-time code so it can deliver the message.
 - **Crossway (ESV API, optional):** Provides the ESV (English Standard Version) translation. Requires your own API key obtained directly from Crossway. Subject to their terms and privacy policy, including noncommercial use requirements. Requests are made directly from your device to Crossway's servers using your own key. We do not intercept, store, or have access to these requests.
 
 You are responsible for complying with the terms of service of any Bible translation provider you use.
