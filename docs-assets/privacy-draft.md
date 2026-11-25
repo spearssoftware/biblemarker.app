@@ -4,7 +4,7 @@ DRAFT — redraft of src/pages/_privacy.md. Not live. Changes vs the live page:
 - Added a new "Sync Accounts" section (section 4) describing the optional email + 8-digit code sign-in, what is stored on our servers (email address, synced study data, device names, hashed session tokens, storage-usage counters), and in-app Delete Account behavior (verified against the worker: deletes all synced blobs, sessions, devices, usage records, OTP codes, and the account row). Later sections renumbered (old 4-11 are now 5-12).
 - Corrected the ESV API key claim: keys are stored on-device, BUT if you sign in to sync, app settings — which include API keys — sync through our servers to your other devices (verified in the app: apiConfigs live in the synced `preferences` table; App.tsx even reloads keys after sync). The old "never transmitted to our servers" wording was no longer true.
 - Section 1.2: ASV is the bundled translation; NASB 2020/1995 are free in-app downloads served from our servers (biblemarker.app via Cloudflare); noted the download log (module name, timestamp, country — not tied to an account).
-- Sections 2, 5 (old 4): removed "we do not operate servers that receive or store user data" and qualified "we do not collect/transmit" claims with the optional sync exception; named Cloudflare (hosting) and Postmark (sign-in emails) as processors.
+- Sections 2, 5 (old 4): removed "we do not operate servers that receive or store user data" and qualified "we do not collect/transmit" claims with the optional sync exception; named Cloudflare (hosting and sign-in emails) as the processor.
 - Section 6 (old 5): added Delete Account and sign-out to Your Rights.
 - Sections 9-10 (old 8-9, CCPA/GDPR): updated to reflect that sync-account holders can exercise deletion via Delete Account or by contacting us.
 - Section 12 (old 11): noted NASB 1995 alongside NASB 2020, that NASB is licensed from The Lockman Foundation and downloaded from our servers, and that the bundled ASV is public domain.
@@ -45,7 +45,7 @@ The app optionally integrates with one third-party Bible API service:
 
 We do not intercept, store, or have access to any API requests made from your device to Crossway. You are responsible for complying with the terms of service of any API provider you use.
 
-We also use two service providers to operate the optional sync feature: Cloudflare (hosting and storage for our sync servers) and Postmark (delivery of sign-in code emails). They process data on our behalf and do not use it for their own purposes.
+We also use a service provider to operate the optional sync feature: Cloudflare (hosting and storage for our sync servers, and delivery of sign-in code emails). It processes data on our behalf and does not use it for its own purposes.
 
 ## 2. How We Use Your Information
 
@@ -78,7 +78,7 @@ Sync is optional. The app is fully functional offline without an account.
 We do not sell, trade, or otherwise transfer your information to third parties:
 
 - Without sync, all data is stored locally on your device and we do not have access to it
-- With sync, your data is stored on our servers only to provide synchronization, and is shared only with the service providers that host and operate the service (Cloudflare) and deliver sign-in emails (Postmark), acting on our behalf
+- With sync, your data is stored on our servers only to provide synchronization, and is shared only with the service provider that hosts and operates the service and delivers sign-in emails (Cloudflare), acting on our behalf
 - We do not read, sell, or share your study data with anyone
 
 If you use the ESV API, your requests are made directly from your device to Crossway's servers, and they may collect information according to their own privacy policy.
