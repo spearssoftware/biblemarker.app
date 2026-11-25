@@ -8,7 +8,7 @@ Built with [Astro](https://astro.build/) and [Starlight](https://starlight.astro
 
 - `src/pages/index.astro` — Home: hero, features, downloads
 - `src/pages/privacy.astro` — Privacy Policy (required for app stores)
-- `src/pages/contact.astro` — Contact form (Turnstile + Postmark)
+- `src/pages/contact.astro` — Contact form (Turnstile + Cloudflare Email Sending)
 - `src/pages/support.astro` — 301 redirect to docs (preserves App Store URL)
 - `src/content/docs/` — Starlight documentation (getting started, how-to guides, shortcuts)
 - `functions/api/contact.js` — Cloudflare Worker for contact form
@@ -38,7 +38,7 @@ npx wrangler deploy
 
 Requires environment variables:
 - `TURNSTILE_SECRET_KEY` — Cloudflare Turnstile verification
-- `POSTMARK_SERVER_TOKEN` — Postmark API key for email delivery
+- `CF_EMAIL_API_TOKEN` — Cloudflare API token with Email Sending send permission
 
 Add custom domain `biblemarker.app` in the Cloudflare dashboard. Configure `biblemarker.org` to redirect to `biblemarker.app`.
 

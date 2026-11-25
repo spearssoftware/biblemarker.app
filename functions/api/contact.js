@@ -1,5 +1,8 @@
 const RECIPIENT = "support+biblemarker@spearssoftware.com";
 
+const SEND_URL =
+  "https://api.cloudflare.com/client/v4/accounts/55613a1e13193324a5d8823e013cc00a/email/sending/send";
+
 export async function onRequestPost(context) {
   const { request, env } = context;
 
@@ -21,7 +24,7 @@ export async function onRequestPost(context) {
     return jsonResponse(403, { error: "Turnstile verification failed" });
   }
 
-  const result = await sendEmail({ name, email, message }, env.POSTMARK_SERVER_TOKEN);
+  const result = await sendEmail({ name, email, message }, env.CF_EMAIL_API_TOKEN);
   if (!result.ok) {
     return jsonResponse(500, { error: "Failed to send message" });
   }
@@ -39,21 +42,19 @@ async function verifyTurnstile(token, secret) {
   return data.success === true;
 }
 
-async function sendEmail({ name, email, message }, serverToken) {
-  const res = await fetch("https://api.postmarkapp.com/email", {
+async function sendEmail({ name, email, message }, apiToken) {
+  const res = await fetch(SEND_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-Postmark-Server-Token": serverToken,
-      Accept: "application/json",
+      Authorization: `Bearer ${apiToken}`,
     },
     body: JSON.stringify({
-      From: RECIPIENT,
-      To: RECIPIENT,
-      ReplyTo: email,
-      Subject: `BibleMarker Support: ${name}`,
-      TextBody: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-      MessageStream: "spearssoftwareforms",
+      from: RECIPIENT,
+      to: RECIPIENT,
+      reply_to: email,
+      subject: `BibleMarker Support: ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     }),
   });
 
